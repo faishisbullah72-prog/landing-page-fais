@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fais Developer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+/* RESET */
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#f5f5f5;
+}
+
+/* NAVBAR */
+.navbar{
+  position:sticky;
+  top:0;
+  background:white;
+  padding:15px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  z-index:1000;
+}
+
+.navbar a{
+  margin-left:15px;
+  text-decoration:none;
+  color:#2980b9;
+  font-weight:bold;
+}
+
+/* HERO */
+.hero{
+  background:linear-gradient(135deg,#2980b9,#6dd5fa);
+  color:white;
+  text-align:center;
+  padding:90px 20px;
+}
+
+.hero h1{
+  font-size:36px;
+  margin-bottom:10px;
+}
+
+.hero p{
+  font-size:18px;
+}
+
+/* BUTTON */
+.btn{
+  background:white;
+  color:#2980b9;
+  padding:12px 25px;
+  border-radius:8px;
+  text-decoration:none;
+  display:inline-block;
+  margin-top:15px;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:scale(1.05);
+}
+
+/* TRUST */
+.trust{
+  margin-top:25px;
+  font-size:14px;
+}
+
+/* SECTION */
+section{
+  padding:60px 20px;
+  text-align:center;
+}
+
+/* FLEX */
+.flex{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+/* CARD */
+.card{
+  background:white;
+  padding:20px;
+  border-radius:15px;
+  width:260px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 15px 30px rgba(0,0,0,0.2);
+}
+
+.card img{
+  width:100%;
+  height:160px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+/* HARGA */
+.price{
+  font-size:22px;
+  color:#2980b9;
+  font-weight:bold;
+}
+
+/* WA FLOAT */
+.wa-float{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  font-size:22px;
+  padding:15px;
+  border-radius:50%;
+  text-decoration:none;
+  box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* FOOTER */
+footer{
+  background:#222;
+  color:white;
+  padding:20px;
+  text-align:center;
+}
+
+/* IMAGE GLOBAL */
+img{
+  max-width:100%;
+  height:auto;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px){
+
+  .navbar{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .navbar div{
+    margin-top:10px;
+  }
+
+  .hero{
+    padding:60px 15px;
+  }
+
+  .hero h1{
+    font-size:24px;
+  }
+
+  .hero p{
+    font-size:14px;
+  }
+
+  .flex{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .card{
+    width:100%;
+  }
+
+  section{
+    padding:40px 15px;
+  }
+
+  .btn{
+    width:100%;
+    text-align:center;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <h2>Fais Developer</h2>
+  <div>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#harga">Harga</a>
+    <a href="#kontak">Kontak</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Jasa Pembuatan Website Profesional 🚀</h1>
+  <p>Bikin website modern, cepat & siap menghasilkan untuk bisnis kamu</p>
+
+  <a href="https://wa.me/62895414029128" class="btn">💬 Konsultasi Gratis</a>
+
+  <div class="trust">
+    ⭐ 10+ Client<br>
+    ⚡ Fast Response<br>
+    🔥 Harga Terjangkau
+  </div>
+</div>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+<h2>Portfolio Saya</h2>
+
+<div class="flex">
+
+<div class="card">
+<img src="project1.jpeg" alt="Website Toko Online">
+<h3>Website Toko Online</h3>
+<p>Desain modern & mobile friendly</p>
+<a href="#" class="btn">Lihat Website</a>
+</div>
+
+<div class="card">
+<img src="project2.jpeg" alt="Landing Page Jasa">
+<h3>Landing Page Jasa</h3>
+<p>Fokus convert jadi client</p>
+<a href="#" class="btn">Lihat Website</a>
+</div>
+
+</div>
+</section>
+
+<!-- HARGA -->
+<section id="harga">
+<h2>Paket Harga</h2>
+
+<div class="flex">
+
+<div class="card">
+<h3>Basic</h3>
+<p class="price">Rp500K</p>
+<p>✔ 1 Halaman</p>
+<p>✔ Mobile Friendly</p>
+<a href="https://wa.me/62895414029128" class="btn">Pesan</a>
+</div>
+
+<div class="card">
+<h3>Pro 🔥</h3>
+<p class="price">Rp1jt</p>
+<p>✔ 3 Halaman</p>
+<p>✔ Animasi</p>
+<p>✔ SEO Basic</p>
+<a href="https://wa.me/62895414029128" class="btn">Pesan</a>
+</div>
+
+</div>
+</section>
+
+<!-- KEUNGGULAN -->
+<section>
+<h2>Kenapa Pilih Saya?</h2>
+
+<div class="flex">
+
+<div class="card">
+<h3>⚡ Cepat</h3>
+<p>Pengerjaan 1-7 hari</p>
+</div>
+
+<div class="card">
+<h3>💰 Murah</h3>
+<p>Harga terjangkau</p>
+</div>
+
+<div class="card">
+<h3>🎯 Profesional</h3>
+<p>Design modern & clean</p>
+</div>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2026 Fais Developer</p>
+</footer>
+
+<!-- WA FLOAT -->
+<a href="https://wa.me/62895414029128" class="wa-float">💬</a>
+
+</body>
+</html>
